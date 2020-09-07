@@ -24,21 +24,21 @@ There are 5 different way of rendering a partial view.
 
 ### What is the different between Partial and Render Partial in MVC?
 
-Partial: The partial method returns an MvcHtmlString object. Basically, it stringifies the HTML content in the location where it was specified.
+**Partial**: The partial method returns an MvcHtmlString object. Basically, it stringifies the HTML content in the location where it was specified.
 
 Example: @Html.Partial("_employee") 
 
-Render Partial: The Render Partial method will not actually return any values or strings and instead, it will write the Partial View that is requested to the Response Stream through response write internally.
+**Render Partial**: The Render Partial method will not actually return any values or strings and instead, it will write the Partial View that is requested to the Response Stream through response write internally.
 
 Example: @{ Html.Partial("_employee"); } 
 
 ### What is the different between Action and Render Action in MVC?
 
-Action: Action method returns a string with the result.
+**Action**: Action method returns a string with the result.
 
 Example: @Html.Action("Employee") 
 
-Render Action: The Render Action method renders the result directly to the response which means it is more efficient if the action returns a large amount of HTML.
+**Render Action**: The Render Action method renders the result directly to the response which means it is more efficient if the action returns a large amount of HTML.
 
 Example: @{ Html.Action("Employee"); }
 
